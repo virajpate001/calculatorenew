@@ -23,6 +23,9 @@ function Home() {
 					<div class="bg-yellow-400 text-black px-6 py-2 rounded-3xl">
 						<Link to={'/flipkart'}>Flipkart</Link>
 					</div>
+					<div class="bg-black text-white px-6 py-2 rounded-3xl">
+						<Link to={'/gstcal'}>GST</Link>
+					</div>
 				</div>
 			</div>
 		</>

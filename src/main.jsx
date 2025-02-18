@@ -12,6 +12,7 @@ import {
 } from 'react-router-dom'
 import Amazon from './components/Amazon.jsx'
 import Flipkart from './components/Flipkart.jsx'
+import Gstcal from './components/Gstcal.jsx'
 
 const router = createBrowserRouter([
 	{
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
 			{
 				path: '/flipkart',
 				element: <Flipkart />
+			},
+			{
+				path: '/gstcal',
+				element: <Gstcal />
 			}
 		]
 	}
