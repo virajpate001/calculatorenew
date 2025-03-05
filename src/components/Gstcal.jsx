@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import gstimg from '../assets/img/gst.png'
+import { Link } from 'react-router-dom';
 
 const Gstcal = () => {
     // State variables for inputs
@@ -51,7 +53,7 @@ const Gstcal = () => {
   return (
     <>
        <div style={{ padding: '20px', maxWidth: '500px', margin: 'auto' }}>
-      <h2>GST Calculator for Wholesale Purchase</h2>
+       <Link to={"/"}> <img className="w-20 mx-auto" src={gstimg} alt="Meesho Logo" /></Link>
       
       <div style={{ marginBottom: '10px' }}>
         <label>Wholesale Price per Unit (₹): </label>

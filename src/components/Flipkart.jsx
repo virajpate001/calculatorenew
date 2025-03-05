@@ -15,7 +15,7 @@ function Flipkart() {
 	useEffect(() => {
 		const basePrice =
 			parseFloat(buyPrice) + parseFloat(packaging) + parseFloat(transport)
-		const gstAmount = (basePrice * parseFloat(gst)) / 100
+		const gstAmount = (buyPrice * parseFloat(gst)) / 100
 		const finalAmount = basePrice + gstAmount + parseFloat(profit)
 
 		const flipkartAmt = finalAmount * 2

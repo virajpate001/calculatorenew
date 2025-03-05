@@ -16,9 +16,9 @@ function Amazon() {
 	useEffect(() => {
 		const basePrice =
 			parseFloat(buyPrice) + parseFloat(packaging) + parseFloat(transport)
-		const gstAmount = (basePrice * parseFloat(gst)) / 100
+		const gstAmount = (buyPrice * parseFloat(gst)) / 100
 		const finalAmount = basePrice + gstAmount + parseFloat(profit)
-		const amazonAmt = finalAmount * 4
+		const amazonAmt = finalAmount * 3
 
 		setFinalPrice(amazonAmt.toFixed(2))
 	}, [buyPrice, gst, packaging, transport, profit])
